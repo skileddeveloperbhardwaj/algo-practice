@@ -1,3 +1,4 @@
+#This program calculates sum array that stores for each i in sum array the sum minus arr[i]
 def SumArray(arr,n):
     sumArr = [None]*n
     sum = 0
