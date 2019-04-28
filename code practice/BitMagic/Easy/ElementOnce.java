@@ -20,7 +20,8 @@ public class ElementOnce {
 			x = 1 << i;
 			sum = 0;
 			for (int j = 0; j < n; j++) {
-				if ((arr[j] & x) == 0) {
+				if ((arr[j] & x) == 0) {// comparing to zero because if sum%3 != 0 then that bit is not set for singly
+										// occurring element.
 					sum++;
 				}
 			}
