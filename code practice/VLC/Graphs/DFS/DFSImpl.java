@@ -4,7 +4,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 
-import BFS.Graph;
+import Graph.Graph;
+
 
 /**
  * This class implements the DFS traversal using iterative and backtracking

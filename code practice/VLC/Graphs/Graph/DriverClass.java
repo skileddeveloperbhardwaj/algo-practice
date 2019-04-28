@@ -1,5 +1,7 @@
-package BFS;
+package Graph;
 
+
+import BFS.BFSImpl;
 import DFS.DFSImpl;
 
 /**

@@ -1,4 +1,5 @@
-package BFS;
+package Graph;
+
 
 import java.util.LinkedList;
 

@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import Graph.Graph;
+
 /**
  * BFS Implementation program. Driver class provides it input in the form of
  * Graph g.
@@ -28,8 +30,8 @@ public class BFSImpl {
 
 		vQueue.add(s); // adding source vertex to queue initially
 		visited[s] = true; // marking source vertex as visited
-
-		System.out.print("BFS output of given graph is: ")
+		System.out.print("BFS traversal output: ");
+		
 		while (!vQueue.isEmpty()) {// loop to implement BFS. In this loop we are traversing graph breadth wise i.e.
 									// layer-by-layer.
 			int source = vQueue.poll();// source node fetched from queue's front
@@ -45,7 +47,5 @@ public class BFSImpl {
 				}
 			}
 		}
-		
-		// OUTPUT--> BFS output of given graph is: 2 0 3 1
 	}
 }
