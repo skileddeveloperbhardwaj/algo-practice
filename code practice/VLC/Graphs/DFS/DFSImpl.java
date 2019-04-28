@@ -7,7 +7,8 @@ import java.util.Stack;
 import BFS.Graph;
 
 /**
- * This class implements the DFS traversal using iterative approach.
+ * This class implements the DFS traversal using iterative and backtracking
+ * approaches.
  * 
  * @author Gaurav
  *
@@ -21,7 +22,7 @@ public class DFSImpl {
 	 * @param g Given graph
 	 * @param s source vertex
 	 */
-	public void DFSTraversal(Graph g, int s) {
+	public void DFSIterativeTraversal(Graph g, int s) {
 		int v = g.getV(); // number of vertices
 		LinkedList<Integer> adj[] = g.getAdj(); // adjacency list
 		boolean visited[] = new boolean[v]; // array to store if vertex is visited or not
@@ -47,13 +48,51 @@ public class DFSImpl {
 			}
 		}
 	}
+
+	/**
+	 * Method for recursive DFS implementation.
+	 * 
+	 * @param g given graph
+	 * @param s source vertex
+	 */
+	public void DFSRecTraversal(Graph g, int s) {
+		int v = g.getV();
+		LinkedList<Integer> adj[] = g.getAdj();
+		boolean visited[] = new boolean[v];
+		visited[s] = true;
+		System.out.print("DFS traversal output: ");
+		DFSUtil(adj, s, visited);
+	}
+
+	private void DFSUtil(LinkedList adj[], int s, boolean visited[]) {
+		Iterator<Integer> itr = adj[s].listIterator();
+		System.out.print(s + " ");
+		while (itr.hasNext()) {
+			int node = itr.next();
+			if (visited[node] != true) {
+				visited[node] = true;
+				DFSUtil(adj, node, visited);
+			}
+		}
+	}
 }
 
 /*
- * DFS traversal output: 2 3 0 1
- * 
- * Dry Run: Graph: 0--------1 | | _| | | | | | _| 2____|____3]
- * 
- * Run: source = 2 vStack | Output 2 | 0,3 | 2 0 | 2,3 1 | 2,3,0 empty | 2,3,0,1
- * -> final output
- */
+   DFS traversal output: 2 3 0 1
+   
+   Dry Run:
+   Graph:
+   0--------1
+  | |      _|
+  | |     |
+  | |    _|
+   2____|____3]
+   
+   Run: source = 2
+    vStack  |    Output
+      2     |   
+      0,3   |      2
+      0     |      2,3
+      1     |      2,3,0
+     empty  |      2,3,0,1 -> final output
+*/ 
