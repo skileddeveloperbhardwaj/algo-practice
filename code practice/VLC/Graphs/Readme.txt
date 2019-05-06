@@ -3,3 +3,4 @@ This folder contains programs related to Graphs. It includes:
 2. DFS
 3. Cycle
 4. Shortest Path
+5. Minimum Spannin Tree
