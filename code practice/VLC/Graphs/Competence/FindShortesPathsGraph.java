@@ -37,11 +37,11 @@ public class FindShortesPathsGraph {
 	}
 
 	/**
-	 * Retruns total path from src to dest. 
+	 * Retuns total path from src to dest. 
 	 * Pairs pf source and destinations are: 1->2; 2->3; 3->4
-	 * @param arr
-	 * @param src
-	 * @return
+	 * @param arr given NxN matrix
+	 * @param src current source
+	 * @return total path from src to dest. 
 	 */
 	private static int findAllShortestPaths(int[][] arr, int src) {
 		// TODO Auto-generated method stub
