@@ -9,8 +9,13 @@ open class PropsAndFields {
         set(value) {
             var temp = value
             temp = temp?.plus(10)
-            field = temp
+            field = temp //field is the backing field; it  can be used only in the accessors: getters and setters
         }
+
+    val isEmpty get() = this.allByDefault == 0  // has type Boolean --> type an be inferred from getter
+
+    var setterVisibility: String = "abc"
+        private set // the setter is private and has the default implementation
 }
 
 fun main() {
