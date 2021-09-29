@@ -1,2 +1,5 @@
 https://docs.google.com/spreadsheets/d/1SbpY-04Cz8EWw3A_LBUmDEXKUMO31DBjfeMoA0dlfIA/htmlview?sle=true#
 https://docs.google.com/spreadsheets/d/1KkCeOIBwUFfKrHGGZe_6EJRCIqaM6MJBo0uSIMSD9bs/edit#gid=782922309
+https://docs.google.com/spreadsheets/d/1KkCeOIBwUFfKrHGGZe_6EJRCIqaM6MJBo0uSIMSD9bs/edit#gid=782922309 --> Google
+https://leetcode.com/discuss/study-guide/1204393/algo-list --> Algo Practice
+https://github.com/donnemartin/system-design-primer --> system design

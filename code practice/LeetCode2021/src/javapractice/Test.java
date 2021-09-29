@@ -1,4 +1,4 @@
-package java;
+package javapractice;
 
 public class Test {
     public static void main(String[] args) {
@@ -7,4 +7,9 @@ public class Test {
 
         System.out.print(str.equals(str1));
     }
+}
+
+enum Color {
+    RED, GREEN, BLUE;
+    Color(){}
 }

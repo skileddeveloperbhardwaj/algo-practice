@@ -2,7 +2,17 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/DP/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Graph/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/String/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AmazonPractice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedListPractice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ArrayPractice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TopInterviewQuestions/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Google/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

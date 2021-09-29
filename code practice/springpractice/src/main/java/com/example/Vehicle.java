@@ -1,4 +1,5 @@
-package src.main.java.com.example;
+package com.example;
 
-public class Vehicle {
+public interface Vehicle {
+    void drive();
 }

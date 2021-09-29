@@ -10,31 +10,30 @@ public class SumOfTwoIntegers {
         int l1 = num1.length();
         int l2 = num2.length();
         int i, j;
-        String sum = "";
+        StringBuilder sum = new StringBuilder();
         for (i = l1 - 1, j = l2 - 1; i >= 0 && j >= 0; i--, j--) {
             int d1 = num1.charAt(i) -'0';
             int d2 = num2.charAt(j) -'0';
             int s = (d1 + d2 + c) % 10;
             c = (d1 + d2 + c) / 10;
-            sum += s;
+            sum.append(s);
         }
         while (i >= 0) {
             int s = (num1.charAt(i)-'0') + c;
             c = s / 10;
-            sum += s % 10;
+            sum.append(s % 10);
             i--;
         }
 
         while (j >= 0) {
-            int s = (num2.charAt(j)) -'c' + c;
+            int s = (num2.charAt(j) -'c') + c;
             c = s / 10;
-            sum += s % 10;
+            sum.append(s % 10);
             j--;
         }
         if (c != 0)
-            sum += c;
+            sum.append(c);
 
-        StringBuilder sb = new StringBuilder(sum);
-        return sb.reverse().toString();
+        return sum.reverse().toString();
     }
 }
