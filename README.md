@@ -1,4 +1,4 @@
-# MindWorkout
-This repository has codes for problems practiced by me from multiple sources like GFG, HackerEarth etc. All solutions are very well explained with the help of comments.
+# Interview Preparation Track for Google
+This page tracks my daily practice progress for Google interview tentatively scheduled on 24-Feb-2022.
 
 TALK IS CHEAP, SHOW ME THE CODE!!
