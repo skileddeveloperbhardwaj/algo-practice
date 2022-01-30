@@ -5,4 +5,4 @@ TALK IS CHEAP, SHOW ME THE CODE!!
 
 # Date: Jan 30, 2022
 This page contains my practice status on Jan 30, 2022.
-<a href="./code practice/LeetCode2021/src/interview/google/jan30/jan30.html">Jan 20</a>
+<a href="./code practice/LeetCode2021/src/interview/google/jan30/jan_31_problem_index.html">Jan 30,2022</a>
