@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Minimum Path Sum</h1>
+<pre> public int minPathSum(int[][] grid) {
+        int[][] dp = new int[grid.length][grid[0].length];
+        for(int[] arr:dp) {
+            Arrays.fill(arr, Integer.MAX_VALUE);
+        }
+        
+        dp[0][0] = grid[0][0];
+        
+        dfs(grid, dp, 0, 0);
+        
+        return dp[grid.length-1][grid[0].length-1];
+    }
+    
+    private void dfs(int[][] grid, int[][] dp, int i, int j) {
+        if((i >= grid.length) || (j >= grid[0].length)) {
+            return;
+        }
+        
+        //down
+        if((i+1) < grid.length && dp[i+1][j] > (dp[i][j]+grid[i+1][j])) {
+            dp[i+1][j] = dp[i][j] + grid[i+1][j];
+            dfs(grid, dp, i+1, j);
+        }
+        
+        //up
+        if((j+1) < grid[0].length && dp[i][j+1] > dp[i][j] + grid[i][j+1]) {
+            dp[i][j+1] = dp[i][j] + grid[i][j+1];
+            dfs(grid, dp, i, j+1);
+        }
+    }</pre>
+
+</body>
+</html>
